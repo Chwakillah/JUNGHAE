@@ -7,7 +7,7 @@
          <a href="home.php"> <i class="fas fa-angle-right"></i> Beranda</a>
          <a href="about.php"> <i class="fas fa-angle-right"></i> Tentang Kami</a>
          <a href="shop.php"> <i class="fas fa-angle-right"></i> Layanan</a>
-         <a href="contact.php"> <i class="fas fa-angle-right"></i> Komplain</a>
+         <a href="komplain.php"> <i class="fas fa-angle-right"></i> Komplain</a>
       </div>
 
       <div class="box">

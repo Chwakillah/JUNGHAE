@@ -22,22 +22,17 @@
          <a href="home.php#tentang">Tentang Kami</a>
          <a href="shop.php">Layanan</a>
          <a href="orders.php">Pesanan</a>
-         <a href="contact.php">Komplain</a>
+         <a href="komplain.php">Komplain</a>
       </nav>
 
       <div class="icons">
          <?php
-            // $count_wishlist_items = $conn->prepare("SELECT * FROM `wishlist` WHERE user_id = ?");
-            // $count_wishlist_items->execute([$user_id]);
-            // $total_wishlist_counts = $count_wishlist_items->rowCount();
-
             $count_cart_items = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
             $count_cart_items->execute([$user_id]);
             $total_cart_counts = $count_cart_items->rowCount();
          ?>
          <div id="menu-btn" class="fas fa-bars"></div>
          <a href="search_page.php"><i class="fas fa-search"></i></a>
-         <!-- <a href="wishlist.php"><i class="fas fa-heart"></i><span>(<?= $total_wishlist_counts; ?>)</span></a> -->
          <a href="cart.php"><i class="fas fa-shopping-cart"></i><span>(<?= $total_cart_counts; ?>)</span></a>
          <div id="user-btn" class="fas fa-user"></div>
       </div>

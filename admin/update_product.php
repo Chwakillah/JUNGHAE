@@ -156,17 +156,6 @@ if(isset($_POST['update'])){
 
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
 <script src="../js/admin_script.js"></script>
    
 </body>

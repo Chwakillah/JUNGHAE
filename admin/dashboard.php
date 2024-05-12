@@ -38,7 +38,6 @@ if(!isset($admin_id)){
       <div class="box">
          <h3>Selamat Datang!</h3>
          <p><?= $fetch_profile['name']; ?></p>
-         <!-- <a href="update_profile.php" class="btn">Perbarui Profil</a> -->
       </div>
 
       <div class="box">
@@ -84,63 +83,36 @@ if(!isset($admin_id)){
          <a href="placed_orders.php" class="btn">lihat pesanan</a>
       </div>
 
-      <!-- <div class="box">
          <?php
             $select_products = $conn->prepare("SELECT * FROM `products`");
             $select_products->execute();
             $number_of_products = $select_products->rowCount()
          ?>
-         <h3><?= $number_of_products; ?></h3>
-         <p>produk ditambahkan</p>
-         <a href="products.php" class="btn">Lihat produk</a>
-      </div>
-
-      <div class="box">
+         <?= $number_of_products; ?>
          <?php
             $select_users = $conn->prepare("SELECT * FROM `users`");
             $select_users->execute();
             $number_of_users = $select_users->rowCount()
          ?>
-         <h3><?= $number_of_users; ?></h3>
-         <p>normal users</p>
-         <a href="users_accounts.php" class="btn">Lihat users</a>
-      </div>
-
-      <div class="box">
+         <?= $number_of_users; ?>
          <?php
             $select_admins = $conn->prepare("SELECT * FROM `admins`");
             $select_admins->execute();
             $number_of_admins = $select_admins->rowCount()
          ?>
-         <h3><?= $number_of_admins; ?></h3>
-         <p>admin users</p>
-         <a href="admin_accounts.php" class="btn">Lihat admins</a>
-      </div>
+         <?= $number_of_admins; ?>
 
-      <div class="box">
          <?php
             $select_messages = $conn->prepare("SELECT * FROM `messages`");
             $select_messages->execute();
             $number_of_messages = $select_messages->rowCount()
          ?>
-         <h3><?= $number_of_messages; ?></h3>
-         <p>pesan baru</p>
-         <a href="messagess.php" class="btn">Lihat messages</a>
-      </div> -->
+         <?= $number_of_messages; ?>
+
 
    </div>
 
 </section>
-
-
-
-
-
-
-
-
-
-
 
 
 <script src="../js/admin_script.js"></script>

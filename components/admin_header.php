@@ -22,8 +22,7 @@
          <a href="../admin/products.php">Layanan</a>
          <a href="../admin/placed_orders.php">Pesanan</a>
          <a href="../admin/admin_accounts.php">Admin</a>
-         <!-- <a href="../admin/users_accounts.php">Pelanggan</a> -->
-         <a href="../admin/messages.php">Komplain</a>
+         <a href="../admin/komplain.php">Komplain</a>
       </nav>
 
       <div class="icons">
