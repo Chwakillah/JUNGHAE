@@ -90,7 +90,7 @@ if(isset($_GET['delete'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>products</title>
+   <title>layanan</title>
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
@@ -103,7 +103,7 @@ if(isset($_GET['delete'])){
 
 <section class="add-products">
 
-   <h1 class="heading">tambahkan produk</h1>
+   <h1 class="heading">tambahkan layanan</h1>
 
    <form action="" method="post" enctype="multipart/form-data">
       <div class="flex">
@@ -140,7 +140,7 @@ if(isset($_GET['delete'])){
 
 <section class="show-products">
 
-   <h1 class="heading">produk ditambahkan</h1>
+   <h1 class="heading">layanan ditambahkan</h1>
 
    <div class="box-container">
 
@@ -153,7 +153,7 @@ if(isset($_GET['delete'])){
    <div class="box">
       <img src="../uploaded_img/<?= $fetch_products['image_01']; ?>" alt="">
       <div class="name"><?= $fetch_products['name']; ?></div>
-      <div class="price">$<span><?= $fetch_products['price']; ?></span>/-</div>
+      <div class="price">Rp<span><?= $fetch_products['price']; ?></span>/-</div>
       <div class="details"><span><?= $fetch_products['details']; ?></span></div>
       <div class="flex-btn">
          <a href="update_product.php?update=<?= $fetch_products['id']; ?>" class="option-btn">Perbarui</a>

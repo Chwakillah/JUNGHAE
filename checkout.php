@@ -69,7 +69,7 @@ if(isset($_POST['order'])){
 
    <form action="" method="POST">
 
-   <h3>pesanan Anda</h3>
+   <h3>Pesanan Anda</h3>
 
       <div class="display-orders">
       <?php
@@ -83,7 +83,7 @@ if(isset($_POST['order'])){
                $total_products = implode($cart_items);
                $grand_total += ($fetch_cart['price'] * $fetch_cart['quantity']);
       ?>
-         <p> <?= $fetch_cart['name']; ?> <span>(<?= '$'.$fetch_cart['price'].'/- x '. $fetch_cart['quantity']; ?>)</span> </p>
+         <p> <?= $fetch_cart['name']; ?> <span>(<?= 'Rp'.$fetch_cart['price'].'/- x '. $fetch_cart['quantity']; ?>)</span> </p>
       <?php
             }
          }else{
@@ -92,23 +92,23 @@ if(isset($_POST['order'])){
       ?>
          <input type="hidden" name="total_products" value="<?= $total_products; ?>">
          <input type="hidden" name="total_price" value="<?= $grand_total; ?>" value="">
-         <div class="grand-total">hasil akhir :<span>$<?= $grand_total; ?>/-</span></div>
+         <div class="grand-total">hasil akhir :<span>Rp<?= $grand_total; ?>/-</span></div>
       </div>
 
-      <h3>tempatkan pesanan Anda</h3>
+      <h3>Informasi Pemesan</h3>
 
       <div class="flex">
          <div class="inputBox">
             <span>Nama Anda :</span>
-            <input type="text" name="name" placeholder="enter your name" class="box" maxlength="20" required>
+            <input type="text" name="name" placeholder="Masukkan nama" class="box" maxlength="20" required>
          </div>
          <div class="inputBox">
             <span>Nomor handphone anda :</span>
-            <input type="number" name="number" placeholder="enter your number" class="box" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false;" required>
+            <input type="number" name="number" placeholder="Masukkan nomor HP" class="box" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false;" required>
          </div>
          <div class="inputBox">
             <span>Email Anda :</span>
-            <input type="email" name="email" placeholder="enter your email" class="box" maxlength="50" required>
+            <input type="email" name="email" placeholder="Masukkan email" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
             <span>Metode Pembayaran :</span>
@@ -116,28 +116,28 @@ if(isset($_POST['order'])){
                <option value="cash on delivery">cash on delivery</option>
                <option value="credit card">credit card</option>
                <option value="paytm">paytm</option>
-               <option value="paypal">paypal</option>
+               <option value="qris">qris</option>
             </select>
          </div>
          <div class="inputBox">
             <span>Alamat 01 :</span>
-            <input type="text" name="flat" placeholder="e.g. flat number" class="box" maxlength="50" required>
+            <input type="text" name="flat" placeholder="e.g. Gg. Buntu" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
             <span>Alamat 02 :</span>
-            <input type="text" name="street" placeholder="e.g. street name" class="box" maxlength="50" required>
+            <input type="text" name="street" placeholder="e.g. Jl. Nusantara" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
             <span>Kota :</span>
-            <input type="text" name="city" placeholder="e.g. mumbai" class="box" maxlength="50" required>
+            <input type="text" name="city" placeholder="e.g. Indralaya" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
             <span>Status :</span>
-            <input type="text" name="state" placeholder="e.g. maharashtra" class="box" maxlength="50" required>
+            <input type="text" name="state" placeholder="e.g. Mahasiswa" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
-            <span>Negera :</span>
-            <input type="text" name="country" placeholder="e.g. India" class="box" maxlength="50" required>
+            <span>Negara :</span>
+            <input type="text" name="country" placeholder="e.g. Indonesia" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
             <span>Jumlah Barang :</span>
@@ -145,7 +145,7 @@ if(isset($_POST['order'])){
          </div>
       </div>
 
-      <input type="submit" name="order" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>" value="place order">
+      <input type="submit" name="order" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>" value="Konfirmasi Pembayaran">
 
    </form>
 

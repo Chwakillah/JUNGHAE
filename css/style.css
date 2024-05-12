@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
 
 :root{
-   --main-color:#2980b9;
-   --orange:#f39c12;
-   --red:#e74c3c;
-   --black:#333;
+   --main-color:#f868a7;
+   --orange:#f868a7;
+   --red:#f868a7;
+   --black:#720741;
    --white:#fff;
-   --light-color:#666;
-   --light-bg:#eee;
+   --light-color:#720741;
+   --light-bg:#ffeef5;
    --border:.2rem solid var(--black);
    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }
@@ -41,6 +41,7 @@
 html{
    font-size: 62.5%;
    overflow-x: hidden;
+   scroll-behavior: smooth;
 }
 
 body{
@@ -72,6 +73,7 @@ section{
    font-size: 1.7rem;
    text-transform: capitalize;
    color:var(--white);
+   font-weight: bold;
    cursor: pointer;
    text-align: center;
 }
@@ -91,7 +93,7 @@ section{
 }
 
 .delete-btn{
-   background-color: var(--red);
+   background-color: #940555;
 }
 
 .flex-btn{
@@ -168,7 +170,8 @@ section{
 }
 
 .header .flex .logo{
-   font-size: 2.5rem;
+   font-size: 3rem;
+   font-weight: bold;
    color:var(--black);
 }
 
@@ -233,7 +236,7 @@ section{
 }
 
 .home-bg{
-   background:url(../images/home-bg.png) no-repeat;
+   background:url(../images/hero-bg.png) no-repeat;
    background-size: cover;
    background-position: center;
 }
@@ -263,14 +266,16 @@ section{
 }
 
 .home-bg .home .slide .content span{
-   font-size: 2rem;
-   color:var(--white);
+   font-size: 3rem;
+   font-weight: bold;
+   color: #720741;
 }
 
 .home-bg .home .slide .content h3{
    margin-top: 1rem;
    font-size: 4rem;
-   color:var(--white);
+   color:#720741;
+   font-weight: bold;
    text-transform: uppercase;
 }
 
@@ -654,7 +659,10 @@ section{
    display: inline-block;
    width: auto;
 }
-
+.reviews{
+   /* background-color: #E74A93; */
+   /* width: 80%; */
+}
 .reviews .slide{
    padding:2rem;
    text-align: center;
@@ -696,6 +704,7 @@ section{
 
 .reviews .slide h3{
    font-size: 2rem;
+   font-weight: bold;
    color:var(--black);
 }
 

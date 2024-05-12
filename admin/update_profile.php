@@ -67,7 +67,7 @@ if(isset($_POST['submit'])){
 <section class="form-container">
 
    <form action="" method="post">
-      <h3>memperbaharui profil</h3>
+      <h3>Memperbarui profil</h3>
       <input type="hidden" name="prev_pass" value="<?= $fetch_profile['password']; ?>">
       <input type="text" name="name" value="<?= $fetch_profile['name']; ?>" required placeholder="masukkan nama pengguna Anda" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
       <input type="password" name="old_pass" placeholder="masukkan kata sandi lama" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">

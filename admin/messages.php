@@ -38,7 +38,7 @@ if(isset($_GET['delete'])){
 
 <section class="contacts">
 
-<h1 class="heading">Pesan</h1>
+<h1 class="heading">Daftar Komplain</h1>
 
 <div class="box-container">
 

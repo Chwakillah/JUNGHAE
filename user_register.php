@@ -63,14 +63,14 @@ if(isset($_POST['submit'])){
 <section class="form-container">
 
    <form action="" method="post">
-      <h3>register now</h3>
-      <input type="text" name="name" required placeholder="masukkan username Anda" maxlength="20"  class="box">
-      <input type="email" name="email" required placeholder="masukkan email Anda" maxlength="50"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
-      <input type="password" name="pass" required placeholder="masukkan password Anda" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
-      <input type="password" name="cpass" required placeholder="konfirmasu password Anda" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+      <h3>Buat Akun</h3>
+      <input type="text" name="name" required placeholder="Masukkan username Anda" maxlength="20"  class="box">
+      <input type="email" name="email" required placeholder="Masukkan email Anda" maxlength="50"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="password" name="pass" required placeholder="Masukkan password Anda" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="password" name="cpass" required placeholder="Konfirmasi password Anda" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
       <input type="submit" value="Daftar sekarang" class="btn" name="submit">
       <p>Sudah memiliki akun?</p>
-      <a href="user_login.php" class="option-btn">login sekarang</a>
+      <a href="user_login.php" class="option-btn">Login Sekarang</a>
    </form>
 
 </section>

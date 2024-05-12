@@ -42,9 +42,9 @@ if(isset($_SESSION['user_id'])){
       </div>
 
       <div class="content">
-         <h3>mengapa memilih kami?</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis minus et similique doloribus? Harum molestias tenetur eaque illum quas? Obcaecati nulla in itaque modi magnam ipsa molestiae ullam consequuntur.</p>
-         <a href="contact.php" class="btn">contact us</a>
+         <h3>Mengapa Lundry Jung-Hae?</h3>
+         <p>Sejak 2023, Jung-Hae laundry hadir untuk melayani anda dengan sepenuh hati. Kami percaya dibalik pakaian yang bernoda tersembunyi kenangan yang berharga. Kami membawa kesegaran baru dalam dunia laundry dengan komitmen untuk menjadikan setiap cucian sebagai bagian dari perjalanan cerita Anda.</p>
+         <a href="https://kireiwash.com/about-us/" class="btn">Hubungi Kami</a>
       </div>
 
    </div>
@@ -53,7 +53,7 @@ if(isset($_SESSION['user_id'])){
 
 <section class="reviews">
    
-   <h1 class="heading">ulasan klien</h1>
+   <h1 class="heading">Ulasan Pelanggan</h1>
 
    <div class="swiper reviews-slider">
 
@@ -61,7 +61,7 @@ if(isset($_SESSION['user_id'])){
 
       <div class="swiper-slide slide">
          <img src="images/pic-1.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore distinctio hic, iusto adipisci a rerum nemo perspiciatis fugiat sapiente.</p>
+         <p>Staff Junghae Laundry sangat ramah dan membantu. Proses penerimaan dan pengambilan laundry pun cepat dan efisien.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -69,12 +69,12 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Asep Kasep</h3>
       </div>
 
       <div class="swiper-slide slide">
          <img src="images/pic-2.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore distinctio hic, iusto adipisci a rerum nemo perspiciatis fugiat sapiente.</p>
+         <p>Harga yang ditawarkan Junghae Laundry menurut saya cukup sesuai dengan kualitas pelayanan dan hasil laundry.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -82,12 +82,12 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Poetri Rusmini</h3>
       </div>
 
       <div class="swiper-slide slide">
          <img src="images/pic-3.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore distinctio hic, iusto adipisci a rerum nemo perspiciatis fugiat sapiente.</p>
+         <p>Pakaian saya selalu bersih dan terawat dengan baik setelah dicuci di Junghae Laundry. Mereka juga sigap menangani noda membandel.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -95,12 +95,12 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Ucok</h3>
       </div>
 
       <div class="swiper-slide slide">
          <img src="images/pic-4.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore distinctio hic, iusto adipisci a rerum nemo perspiciatis fugiat sapiente.</p>
+         <p>Junghae Laundry juga menawarkan layanan laundry kilat yang sangat membantu saya ketika membutuhkan pakaian bersih dalam waktu singkat.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -108,12 +108,12 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Edith Warchaw</h3>
       </div>
 
       <div class="swiper-slide slide">
          <img src="images/pic-5.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore distinctio hic, iusto adipisci a rerum nemo perspiciatis fugiat sapiente.</p>
+         <p>Harga yang ditawarkan Junghae Laundry menurut saya cukup sesuai dengan kualitas pelayanan dan hasil laundry.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -121,12 +121,12 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Sutikno</h3>
       </div>
 
       <div class="swiper-slide slide">
          <img src="images/pic-6.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore distinctio hic, iusto adipisci a rerum nemo perspiciatis fugiat sapiente.</p>
+         <p>Staff Junghae Laundry sangat ramah dan membantu. Proses penerimaan dan pengambilan laundry pun cepat dan efisien.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -134,7 +134,7 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Emil Yo</h3>
       </div>
 
    </div>

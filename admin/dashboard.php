@@ -31,14 +31,14 @@ if(!isset($admin_id)){
 
 <section class="dashboard">
 
-   <h1 class="heading">dashboard</h1>
+   <h1 class="heading">Beranda</h1>
 
    <div class="box-container">
 
       <div class="box">
          <h3>Selamat Datang!</h3>
          <p><?= $fetch_profile['name']; ?></p>
-         <a href="update_profile.php" class="btn">memperbaharui profil</a>
+         <!-- <a href="update_profile.php" class="btn">Perbarui Profil</a> -->
       </div>
 
       <div class="box">
@@ -80,11 +80,11 @@ if(!isset($admin_id)){
             $number_of_orders = $select_orders->rowCount()
          ?>
          <h3><?= $number_of_orders; ?></h3>
-         <p>pesanan ditempatkan</p>
+         <p>pesanan</p>
          <a href="placed_orders.php" class="btn">lihat pesanan</a>
       </div>
 
-      <div class="box">
+      <!-- <div class="box">
          <?php
             $select_products = $conn->prepare("SELECT * FROM `products`");
             $select_products->execute();
@@ -126,7 +126,7 @@ if(!isset($admin_id)){
          <h3><?= $number_of_messages; ?></h3>
          <p>pesan baru</p>
          <a href="messagess.php" class="btn">Lihat messages</a>
-      </div>
+      </div> -->
 
    </div>
 

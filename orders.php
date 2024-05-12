@@ -33,7 +33,7 @@ if(isset($_SESSION['user_id'])){
 
 <section class="orders">
 
-   <h1 class="heading">memesan</h1>
+   <h1 class="heading">Pesanan Anda</h1>
 
    <div class="box-container">
 
@@ -54,13 +54,13 @@ if(isset($_SESSION['user_id'])){
       <p>alamat : <span><?= $fetch_orders['address']; ?></span></p>
       <p>metode pembayaran : <span><?= $fetch_orders['method']; ?></span></p>
       <p>pesanan Anda : <span><?= $fetch_orders['total_products']; ?></span></p>
-      <p>total harga : <span>$<?= $fetch_orders['total_price']; ?>/-</span></p>
+      <p>total harga : <span>Rp<?= $fetch_orders['total_price']; ?>/-</span></p>
       <p> Status pembayaran : <span style="color:<?php if($fetch_orders['payment_status'] == 'pending'){ echo 'red'; }else{ echo 'green'; }; ?>"><?= $fetch_orders['payment_status']; ?></span> </p>
    </div>
    <?php
       }
       }else{
-         echo '<p class="empty">belum ada pesanan!</p>';
+         echo '<p class="empty">Belum Ada Pesanan!</p>';
       }
       }
    ?>

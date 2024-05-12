@@ -18,12 +18,12 @@
       <a href="../admin/dashboard.php" class="logo">Admin<span>Panel</span></a>
 
       <nav class="navbar">
-         <a href="../admin/dashboard.php">home</a>
-         <a href="../admin/products.php">products</a>
-         <a href="../admin/placed_orders.php">orders</a>
-         <a href="../admin/admin_accounts.php">admins</a>
-         <a href="../admin/users_accounts.php">users</a>
-         <a href="../admin/messages.php">pesan</a>
+         <a href="../admin/dashboard.php">Beranda</a>
+         <a href="../admin/products.php">Layanan</a>
+         <a href="../admin/placed_orders.php">Pesanan</a>
+         <a href="../admin/admin_accounts.php">Admin</a>
+         <!-- <a href="../admin/users_accounts.php">Pelanggan</a> -->
+         <a href="../admin/messages.php">Komplain</a>
       </nav>
 
       <div class="icons">

@@ -22,13 +22,13 @@ if(isset($_POST['add_to_wishlist'])){
       $check_cart_numbers->execute([$name, $user_id]);
 
       if($check_wishlist_numbers->rowCount() > 0){
-         $message[] = 'already added to wishlist!';
+         $message[] = 'Selesai menambahkan ke wishlist!';
       }elseif($check_cart_numbers->rowCount() > 0){
-         $message[] = 'already added to cart!';
+         $message[] = 'Sudah menambahkan ke keranjang!';
       }else{
          $insert_wishlist = $conn->prepare("INSERT INTO `wishlist`(user_id, pid, name, price, image) VALUES(?,?,?,?,?)");
          $insert_wishlist->execute([$user_id, $pid, $name, $price, $image]);
-         $message[] = 'added to wishlist!';
+         $message[] = 'Menambahkan ke wishlist!';
       }
 
    }
@@ -56,7 +56,7 @@ if(isset($_POST['add_to_cart'])){
       $check_cart_numbers->execute([$name, $user_id]);
 
       if($check_cart_numbers->rowCount() > 0){
-         $message[] = 'already added to cart!';
+         $message[] = 'Selesai menambahkan ke keranjang!';
       }else{
 
          $check_wishlist_numbers = $conn->prepare("SELECT * FROM `wishlist` WHERE name = ? AND user_id = ?");
@@ -69,7 +69,7 @@ if(isset($_POST['add_to_cart'])){
 
          $insert_cart = $conn->prepare("INSERT INTO `cart`(user_id, pid, name, price, quantity, image) VALUES(?,?,?,?,?,?)");
          $insert_cart->execute([$user_id, $pid, $name, $price, $qty, $image]);
-         $message[] = 'added to cart!';
+         $message[] = 'Menambahkan ke keranjang!';
          
       }
 

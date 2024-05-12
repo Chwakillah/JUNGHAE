@@ -40,7 +40,7 @@ if(isset($_POST['update_qty'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Keranjang Shopping</title>
+   <title>Keranjang</title>
    
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -55,7 +55,7 @@ if(isset($_POST['update_qty'])){
 
 <section class="products shopping-cart">
 
-   <h3 class="heading">Keranjang Shopping</h3>
+   <h3 class="heading">Keranjang</h3>
 
    <div class="box-container">
 
@@ -72,11 +72,11 @@ if(isset($_POST['update_qty'])){
       <img src="uploaded_img/<?= $fetch_cart['image']; ?>" alt="">
       <div class="name"><?= $fetch_cart['name']; ?></div>
       <div class="flex">
-         <div class="price">$<?= $fetch_cart['price']; ?>/-</div>
+         <div class="price">Rp<?= $fetch_cart['price']; ?>/-</div>
          <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="<?= $fetch_cart['quantity']; ?>">
          <button type="submit" class="fas fa-edit" name="update_qty"></button>
       </div>
-      <div class="sub-total"> sub total : <span>$<?= $sub_total = ($fetch_cart['price'] * $fetch_cart['quantity']); ?>/-</span> </div>
+      <div class="sub-total"> sub total : <span>Rp<?= $sub_total = ($fetch_cart['price'] * $fetch_cart['quantity']); ?>/-</span> </div>
       <input type="submit" value="hapus item" onclick="return confirm('hapus ini dari keranjang?');" class="delete-btn" name="delete">
    </form>
    <?php
@@ -89,7 +89,7 @@ if(isset($_POST['update_qty'])){
    </div>
 
    <div class="cart-total">
-      <p>hasil akhir : <span>$<?= $grand_total; ?>/-</span></p>
+      <p>hasil akhir : <span>Rp<?= $grand_total; ?>/-</span></p>
       <a href="shop.php" class="option-btn">lanjutkan Belanja</a>
       <a href="cart.php?delete_all" class="delete-btn <?= ($grand_total > 1)?'':'disabled'; ?>" onclick="return confirm('hapus semua dari keranjang?');">hapus semua item</a>
       <a href="checkout.php" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>">lanjutkan ke pembayaran</a>
